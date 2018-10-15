@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E8E7F82-174F-4B2B-A33F-476116F029B5}</ProjectGuid>
+    <ProjectGuid>{0E70D7A6-FD44-4084-99B2-82DFE456F969}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MenuShell</RootNamespace>
-    <AssemblyName>MenuShell</AssemblyName>
+    <RootNamespace>Menushell</RootNamespace>
+    <AssemblyName>Menushell</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Customer.cs" />
+    <Compile Include="Domain\Role.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserLoader.cs" />
+    <Compile Include="Domain\AuthentificationService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AdministratorMainView.cs" />
+    <Compile Include="View\LoginView.cs" />
+    <Compile Include="View\ReceptionistMainView.cs" />
+    <Compile Include="View\ConsoleView.cs" />
+    <Compile Include="View\RegisterNewCustomer.cs" />
+    <Compile Include="View\SearchCustomerView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
